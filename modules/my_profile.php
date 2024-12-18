@@ -1,5 +1,8 @@
 
-<h1>Jeremiah B Simo</h1>
-    <p>IT instructor</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
- 
+<h1>Zesarjen Bejona</h1>
+    <p>An IT Student</p>
+    <p>19 years old
+        A part-time English teacher
+        Lives in Zone 10 Upper Carmen, Cagayan de Oro City
+        Likes to play games, dance and sing
+    </p>
