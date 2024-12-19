@@ -82,13 +82,36 @@ footer {
 <section>
   <nav>
     <ul>
-      <li><a href="index.php" >index</a></li>
-    
+      <li><a href="index.php?page=london" class="<?php echo ($_GET['page'] ?? '') === 'london' ? 'active': '';?>">London</a></li>
+      <li><a href="index.php?page=paris" class="<?php echo ($_GET['page'] ?? '') === 'paris' ? 'active': '';?>">Paris</a></li>
+      <li><a href="index.php?page=tokyo" class="<?php echo ($_GET['page'] ?? '') === 'tokyo' ? 'active': '';?>">Tokyo</a></li>
+      <li><a href="index.php?page=profile" class="<?php echo ($_GET['page'] ?? '') === 'profile' ? 'active': '';?>">Profile</a></li>
+
     </ul>
   </nav>
   
   <article>
-  
+   <?php
+        if (isset($_GET['page'])){
+                $page =$_GET['page'];
+                Switch ($page){
+                    case 'london':
+                        include 'london.php';
+                        break;
+                        case 'paris':
+                            include 'paris.php';
+                            break;
+                            case 'tokyo':
+                                include 'tokyo.php';
+                                break;
+                                case 'profile':
+                                  include 'my_profile.php';
+                                  break; 
+                                 
+                }
+
+        }
+   ?>
   </article>
 </section>
 
